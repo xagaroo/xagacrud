@@ -1,0 +1,1 @@
+<td><a class='btn btn-xs btn-info' href='{{$path}}'>{{$label}}</a></td>
