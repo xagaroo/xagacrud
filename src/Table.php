@@ -61,7 +61,7 @@ class Table
 	public function __toString()
 	{
 		$str = $this->head();
-
+		
 		foreach ($this->rows as $row) {
 			$str .= '<tr data-id="'.$row->id.'">';
 			foreach ($this->columns as $column) {

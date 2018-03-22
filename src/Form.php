@@ -39,9 +39,11 @@ class Form
 			$str .= $view->render();
 		}
 
-		foreach ($this->items as $present) {
-			if (((!$this->unit) && ($present->onCreate)) || (($this->unit) && $present->onEdit)) {
-				$str .= $present->obtain($this->unit);	
+		if ($this->items) {
+			foreach ($this->items as $present) {
+				if (((!$this->unit) && ($present->onCreate)) || (($this->unit) && $present->onEdit)) {
+					$str .= $present->obtain($this->unit);	
+				}
 			}
 		}
 
