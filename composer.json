@@ -1,12 +1,13 @@
 {
-    "name": "Xagaroo/Xcruds",
+    "name": "xagaroo/xagacrud",
     "type": "library",
+    "version": "0.1.0",
     "description": "Easy CRUD generation for Laravel",
     "keywords": [
-        "Xagaroo",
-        "Xcruds"
+        "xagaroo",
+        "xagacrud"
     ],
-    "homepage": "https://github.com/Xagaroo/Xcruds",
+    "homepage": "https://github.com/xagaroo/xagacrud",
     "license": "MIT",
     "authors": [
         {
@@ -26,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Xagaroo\\Xcruds\\": "src"
+            "xagaroo\\xagacrud\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Xagaroo\\Xcruds\\": "tests"
+            "xagaroo\\xagacrud\\": "tests"
         }
     },
     "scripts": {
@@ -45,7 +46,7 @@
         },
         "laravel": {
             "providers": [
-              "Xagaroo\\Xcruds\\XcrudsServiceProvider"
+              "xagaroo\\xagacrud\\XagacrudServiceProvider"
             ]
         }
     },

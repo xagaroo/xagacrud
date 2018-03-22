@@ -1,14 +1,14 @@
 <?php
 
-namespace Xagaroo\Xcruds;
+namespace xagaroo\xagacrud;
 
 use View;
-use Xagaroo\Xcruds\Column;
-use Xagaroo\Xcruds\Columns\Button;
-use Xagaroo\Xcruds\Columns\Id;
-use Xagaroo\Xcruds\Columns\Method;
-use Xagaroo\Xcruds\Columns\Settings;
-use Xagaroo\Xcruds\Columns\Text;
+use xagaroo\xagacrud\Column;
+use xagaroo\xagacrud\Columns\Button;
+use xagaroo\xagacrud\Columns\Id;
+use xagaroo\xagacrud\Columns\Method;
+use xagaroo\xagacrud\Columns\Settings;
+use xagaroo\xagacrud\Columns\Text;
 
 class Table 
 {
@@ -81,7 +81,7 @@ class Table
 
 	public function head()
 	{	
-		$view = View::make('xcruds::table-head', ['columns' => $this->columns, 'colgroups' => $this->colgroups]);
+		$view = View::make('xagacrud::table-head', ['columns' => $this->columns, 'colgroups' => $this->colgroups]);
 		return $view->render();
 	}
 	public function foot()
@@ -90,7 +90,7 @@ class Table
 	}
 	public function deleteModal() 
 	{
-		$view = View::make('xcruds::modal-delete');
+		$view = View::make('xagacrud::modal-delete');
 		return $view->render();
 	}
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Xagaroo\Xcruds\Columns;
+namespace xagaroo\xagacrud\Columns;
 
 use View;
-use Xagaroo\Xcruds\Column;
+use xagaroo\xagacrud\Column;
 
 class Settings extends Column 
 {
@@ -24,7 +24,7 @@ class Settings extends Column
 
 	public function obtain($row)
 	{	
-		$view = View::make('xcruds::columns.' . $this->view, 
+		$view = View::make('xagacrud::columns.' . $this->view, 
 			[
 				'label' => $this->label, 
 				'path' => $this->path,

@@ -1,6 +1,6 @@
 <?php
 
-namespace Xagaroo\Xcruds\Controllers;
+namespace xagaroo\xagacrud\Controllers;
 
 use App\Http\Controllers\Controller;
 use Request;
@@ -21,7 +21,7 @@ class AdminController extends Controller
 		$title = $this->title();
 		$canCreate = method_exists($this, 'canCreate') ? $this->canCreate() : true;
 		$path = $this->path();
-		return view('xcruds::index', compact('table', 'title', 'canCreate', 'path'));
+		return view('xagacrud::index', compact('table', 'title', 'canCreate', 'path'));
 	}
 
 	public function create()
@@ -29,7 +29,7 @@ class AdminController extends Controller
 		$form = $this->form();
 		$title = $this->title();
 		$path = $this->path();
-		return view('xcruds::form', compact('form', 'title', 'path'));
+		return view('xagacrud::form', compact('form', 'title', 'path'));
 	}
 
 	public function postCreate()
@@ -47,7 +47,7 @@ class AdminController extends Controller
 		$form = $this->form($item);
 		$title = $this->title();
 		$path = $this->path();
-		return view('xcruds::form', compact('form', 'title', 'path'));
+		return view('xagacrud::form', compact('form', 'title', 'path'));
 	}
 
 	public function postEdit($id)

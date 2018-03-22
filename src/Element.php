@@ -1,6 +1,6 @@
 <?php
 
-namespace Xagaroo\Xcruds;
+namespace xagaroo\xagacrud;
 use View;
 
 class Element 
@@ -19,7 +19,7 @@ class Element
 
 	public function obtain($item)
 	{
-		$view = View::make('xcruds::elements.' . $this->view, ['label' => $this->label, 'id' => $this->name, 'item' => $item]);
+		$view = View::make('xagacrud::elements.' . $this->view, ['label' => $this->label, 'id' => $this->name, 'item' => $item]);
 		return $view->render();
 	}
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Xagaroo\Xcruds;
+namespace xagaroo\xagacrud;
 
 use Illuminate\Support\ServiceProvider;
 
-class XcrudsServiceProvider extends ServiceProvider
+class XagacrudServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -13,7 +13,7 @@ class XcrudsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/views', 'xcruds');
+        $this->loadViewsFrom(__DIR__.'/views', 'xagacrud');
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Xagaroo\Xcruds;
+namespace xagaroo\xagacrud;
 use View;
 
 class Column 
@@ -15,7 +15,7 @@ class Column
 	public function obtain($row)
 	{	
 		$contents = $row->{$this->name};
-		$view = View::make('xcruds::columns.' . $this->view, ['label' => $this->label, 'content' => $contents]);
+		$view = View::make('xagacrud::columns.' . $this->view, ['label' => $this->label, 'content' => $contents]);
 		return $view->render();
 	}
 }

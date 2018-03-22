@@ -1,14 +1,14 @@
 <?php
 
-namespace Xagaroo\Xcruds;
+namespace xagaroo\xagacrud;
 
 use View;
-use Xagaroo\Xcruds\Element;
-use Xagaroo\Xcruds\Elements\Password;
-use Xagaroo\Xcruds\Elements\Select;
-use Xagaroo\Xcruds\Elements\Separator;
-use Xagaroo\Xcruds\Elements\Text;
-use Xagaroo\Xcruds\Elements\Textarea;
+use xagaroo\xagacrud\Element;
+use xagaroo\xagacrud\Elements\Password;
+use xagaroo\xagacrud\Elements\Select;
+use xagaroo\xagacrud\Elements\Separator;
+use xagaroo\xagacrud\Elements\Text;
+use xagaroo\xagacrud\Elements\Textarea;
 
 class Form 
 {
@@ -35,7 +35,7 @@ class Form
 		$str = $this->start();
 
 		if ($this->unit) {
-			$view = View::make('xcruds::form-id', ['item' => $this->unit]);
+			$view = View::make('xagacrud::form-id', ['item' => $this->unit]);
 			$str .= $view->render();
 		}
 
@@ -57,7 +57,7 @@ class Form
 	}
 	public function submit()
 	{
-		$view = View::make('xcruds::form-submit');
+		$view = View::make('xagacrud::form-submit');
 		return $view->render();
 	}
 	public function stop()

@@ -1,9 +1,9 @@
 <?php
 
-namespace Xagaroo\Xcruds\Columns;
+namespace xagaroo\xagacrud\Columns;
 
 use View;
-use Xagaroo\Xcruds\Column;
+use xagaroo\xagacrud\Column;
 
 class Method extends Column 
 {
@@ -21,7 +21,7 @@ class Method extends Column
 	public function obtain($row)
 	{	
 		$method = $this->function;
-		$view = View::make('xcruds::columns.' . $this->view, ['content' => $method($row)]);
+		$view = View::make('xagacrud::columns.' . $this->view, ['content' => $method($row)]);
 		return $view->render();
 	}
 }

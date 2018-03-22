@@ -1,8 +1,8 @@
 <?php
 
-namespace Xagaroo\Xcruds\Elements;
+namespace xagaroo\xagacrud\Elements;
 
-use Xagaroo\Xcruds\Element;
+use xagaroo\xagacrud\Element;
 
 
 class Textarea extends Element 

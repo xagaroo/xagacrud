@@ -1,8 +1,8 @@
 <?php
 
-namespace Xagaroo\Xcruds\Columns;
+namespace xagaroo\xagacrud\Columns;
 
-use Xagaroo\Xcruds\Column;
+use xagaroo\xagacrud\Column;
 
 class Text extends Column 
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Xagaroo\Xcruds\Elements;
+namespace xagaroo\xagacrud\Elements;
 
-use Xagaroo\Xcruds\Element;
+use xagaroo\xagacrud\Element;
 use View;
 
 class Select extends Element 
@@ -22,7 +22,7 @@ class Select extends Element
 
 	public function obtain($item)
 	{
-		$view = View::make('xcruds::elements.' . $this->view, ['label' => $this->label, 'id' => $this->name, 'item' => $item, 'data' => $this->options]);
+		$view = View::make('xagacrud::elements.' . $this->view, ['label' => $this->label, 'id' => $this->name, 'item' => $item, 'data' => $this->options]);
 		return $view->render();
 	}
 
