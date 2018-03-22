@@ -1,25 +1,22 @@
-@extends('layouts.admin')
+@extends('xagacrud::layout.admin')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="panel panel-default">
+			<h4>{{$title}}</h4>
 
-				<div class="panel-heading">{{$title}}</div>
+			<hr>
 
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-12">
-							<a class='btn btn-default' href='/admin/{{$path}}'>Atrás</a>
-						</div>
-					</div>
-
-					<hr>
-
-					{!! $form !!}
+			<div class="row">
+				<div class="col-md-12">
+					<a class='btn btn-default' href='/admin/{{$path}}'>Atrás</a>
 				</div>
 			</div>
+
+			<hr>
+
+			{!! $form !!}
 		</div>
 	</div>
 </div>

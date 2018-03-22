@@ -1,7 +1,7 @@
 {
     "name": "xagaroo/xagacrud",
     "type": "library",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Easy CRUD generation for Laravel",
     "keywords": [
         "xagaroo",

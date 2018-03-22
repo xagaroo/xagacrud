@@ -8,6 +8,12 @@ use Request;
 class AdminController extends Controller
 {
 
+	public function start()
+	{
+		return view('xagacrud::start');
+	}
+
+
 	public function index()
 	{
 
